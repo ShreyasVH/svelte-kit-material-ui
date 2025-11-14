@@ -3,8 +3,9 @@
     import TabBar from '@smui/tab-bar';
     import Buttons from './buttons.svelte';
     import Table from './table.svelte';
+    import Loader from './loader.svelte';
 
-    let tabNames = ['Buttons', 'Avatars', 'Chips', 'Table']
+    let tabNames = ['Buttons', 'Avatars', 'Chips', 'Table', 'Loader']
     let active = tabNames[0];
 </script>
 
@@ -26,5 +27,9 @@
 {:else if active === 'Table'}
     <div>
         <Table />
+    </div>
+{:else if active === 'Loader'}
+    <div>
+        <Loader />
     </div>
 {/if}
