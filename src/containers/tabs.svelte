@@ -9,11 +9,13 @@
     let active = tabNames[0];
 </script>
 
-<TabBar tabs={tabNames} let:tab bind:active>
+<TabBar tabs={tabNames} bind:active>
     <!-- Note: the `tab` property is required! -->
-    <Tab {tab}>
-        <Label>{tab}</Label>
-    </Tab>
+    {#snippet tab(tab)}
+        <Tab {tab}>
+            <Label>{tab}</Label>
+        </Tab>
+    {/snippet}
 </TabBar>
 
 {#if active === 'Buttons'}

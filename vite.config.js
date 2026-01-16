@@ -6,6 +6,6 @@ export default defineConfig({
 	server: {
 		host: process.env.VITE_HOST,
 		port: process.env.VITE_PORT,
-		allowedHosts: ['material.sveltekit.com']
+		allowedHosts: [process.env.VITE_ALLOWED_HOSTS]
 	}
 });
