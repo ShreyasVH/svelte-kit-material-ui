@@ -14,6 +14,7 @@
     });
 
     const showLoader = (event) => {
+        console.log('event');
         event.preventDefault();
 
         const myEvent = new CustomEvent('show-loader', {});
@@ -29,12 +30,12 @@
 </script>
 
 <div>
-    <Button variant="raised" on:click={showLoader}>
+    <Button variant="raised" onclick={showLoader}>
         Show Loader
     </Button>
 
     <Dialog bind:open surface$style="background: transparent; box-shadow: none;" scrimClickAction="">
-        <div tabindex="0">
+        <div tabindex="0" style="display: flex; justify-content: center; align-items: center;">
             <CircularProgress style="height: 50px; width: 50px;" indeterminate />
         </div>
     </Dialog>
