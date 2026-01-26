@@ -18,20 +18,22 @@
     {/snippet}
 </TabBar>
 
-{#if active === 'Buttons'}
-    <div>
-        <Buttons />
-    </div>
-{:else if active === 'Avatars'}
-    <div>
-        Avatars
-    </div>
-{:else if active === 'Table'}
-    <div>
-        <Table />
-    </div>
-{:else if active === 'Loader'}
-    <div>
-        <Loader />
-    </div>
-{/if}
+<div style="padding: 0 5%">
+    {#if active === 'Buttons'}
+        <div>
+            <Buttons />
+        </div>
+    {:else if active === 'Avatars'}
+        <div>
+            Avatars
+        </div>
+    {:else if active === 'Table'}
+        <div>
+            <Table />
+        </div>
+    {:else if active === 'Loader'}
+        <div>
+            <Loader />
+        </div>
+    {/if}
+</div>
