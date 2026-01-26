@@ -8,6 +8,7 @@
         Header,
         Title,
         Subtitle,
+        Scrim
       } from '@smui/drawer';
 
   import List, { Item, Text } from '@smui/list';
@@ -17,7 +18,7 @@
 
 <div class="flexy">
     <div class="drawer-container">
-      <Drawer variant="dismissible" bind:open>
+      <Drawer variant="modal" fixed={false} bind:open>
         <Header>
           <Title>Menu</Title>
           <Subtitle>Sub heading</Subtitle>
@@ -37,6 +38,8 @@
           </List>
         </Content>
       </Drawer>
+
+    <Scrim fixed={false} />
 
       <AppContent class="app-content">
         <main class="main-content flexy">
