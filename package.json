@@ -18,6 +18,7 @@
 		"@smui/dialog": "^8.0.3",
 		"@smui/drawer": "^8.0.3",
 		"@smui/icon-button": "^8.0.3",
+		"@smui/layout-grid": "^8.0.3",
 		"@smui/list": "^8.0.3",
 		"@smui/tab": "^8.0.3",
 		"@smui/tab-bar": "^8.0.3",
