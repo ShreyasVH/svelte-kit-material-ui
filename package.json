@@ -20,6 +20,7 @@
 		"@smui/icon-button": "^9.0.1",
 		"@smui/layout-grid": "^9.0.1",
 		"@smui/list": "^9.0.1",
+		"@smui/snackbar": "^9.0.1",
 		"@smui/tab": "^9.0.1",
 		"@smui/tab-bar": "^9.0.1",
 		"@smui/top-app-bar": "^9.0.1",
