@@ -59,7 +59,7 @@
         Show Warning
     </Button>
 
-    <Snackbar bind:this={snackbar} class={type} timeoutMs={5000}>
+    <Snackbar bind:this={snackbar} class={type} timeoutMs={-1}>
         <Label>
             {message}
         </Label>
