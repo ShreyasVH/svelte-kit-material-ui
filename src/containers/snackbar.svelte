@@ -30,7 +30,6 @@
         window.removeEventListener('hide-snackbar', handleHideSnackbar);
     });
     const showSnackbar = (event, data) => {
-        console.log('event');
         event.preventDefault();
 
         const myEvent = new CustomEvent('show-snackbar', { detail: { type: data.type, message: data.message } });
