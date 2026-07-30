@@ -1,6 +1,7 @@
 <script>
-    import TopAppBar from '@smui/top-app-bar';
+    import TopAppBar, { Section, Row } from '@smui/top-app-bar';
     import IconButton from '@smui/icon-button';
+    import ThemeSelector from '../components/themeSelector.svelte';
 
     import Drawer, {
         AppContent,
@@ -48,7 +49,15 @@
                       variant="static"
                       color="primary"
               >
-                  <IconButton class="material-icons" onclick={() => (open = !open)}>menu</IconButton>
+                  <Row>
+                      <Section>
+                          <IconButton class="material-icons" onclick={() => (open = !open)}>menu</IconButton>
+                      </Section>
+
+                      <Section align="end" toolbar>
+                          <ThemeSelector />
+                      </Section>
+                  </Row>
               </TopAppBar>
           </div>
         </main>
