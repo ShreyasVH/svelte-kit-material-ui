@@ -6,8 +6,9 @@
     import Loader from './loader.svelte';
     import Card from './card.svelte';
     import Snackbar from './snackbar.svelte';
+    import SearchSelectContainer from './searchSelectContainer.svelte';
 
-    let tabNames = ['Buttons', 'Avatars', 'Chips', 'Table', 'Loader', 'Card', 'Snackbar'];
+    let tabNames = ['Buttons', 'Avatars', 'Chips', 'Table', 'Loader', 'Card', 'Snackbar', 'SearchSelect'];
     let active = tabNames[0];
 </script>
 
@@ -44,6 +45,10 @@
     {:else if active === 'Snackbar'}
         <div>
             <Snackbar />
+        </div>
+    {:else if active === 'SearchSelect'}
+        <div>
+            <SearchSelectContainer />
         </div>
     {/if}
 </div>

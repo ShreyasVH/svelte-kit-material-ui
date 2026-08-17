@@ -25,6 +25,7 @@
 		"@smui/switch": "^9.0.2",
 		"@smui/tab": "^9.0.2",
 		"@smui/tab-bar": "^9.0.2",
+		"@smui/textfield": "^9.0.2",
 		"@smui/top-app-bar": "^9.0.2",
 		"@sveltejs/adapter-auto": "^7.0.1",
 		"@sveltejs/kit": "^2.70.2",
