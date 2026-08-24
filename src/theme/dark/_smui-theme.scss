@@ -11,51 +11,14 @@
   $error: color-palette.$red-700
 );
 
-@use '@smui/snackbar/style' as smui-snackabar;
-@use '@smui/snackbar/styles/mixins' as snackbar;
-@use '@smui/icon-button/styles/mixins' as icon-button;
-
 html,
 body {
   background-color: #121316;
   color: theme.$on-surface;
-  margin: 0;
-}
-
-a {
-  color: #40b3ff;
-}
-a:visited {
-  color: color.scale(#40b3ff, $lightness: -35%);
-}
-
-.mdc-snackbar.success {
-  @include snackbar.fill-color(color-palette.$green-500);
-  @include snackbar.label-ink-color(#fff);
-  @include icon-button.ink-color(#fff);
-}
-
-.mdc-snackbar.warning {
-  @include snackbar.fill-color(color-palette.$orange-500);
-  @include snackbar.label-ink-color(#fff);
-  @include icon-button.ink-color(#fff);
-}
-
-.mdc-snackbar.error {
-  @include snackbar.fill-color(color-palette.$red-500);
-  @include snackbar.label-ink-color(#fff);
-  @include icon-button.ink-color(#fff);
-}
-
-.mdc-snackbar.info {
-  @include snackbar.fill-color(#42a5f5);
-  @include snackbar.label-ink-color(#fff);
-  @include icon-button.ink-color(#fff);
 }
 
 .search-dropdown {
   background-color: rgb(18, 19, 22);
-  box-shadow: 0 4px 10px 0 rgb(0, 0, 0);
   color: rgb(227, 226, 230)
 }
 
